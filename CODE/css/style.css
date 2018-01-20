@@ -1,0 +1,429 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #f7f7f7;
+}
+
+/*header*/
+header{
+    display: inline;
+    height: 8vh;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1.5vh 0 0 2vw;
+    z-index: 1000;
+    border-radius:0 0 2px 2px;
+    background-color: white;
+    position: fixed;
+}
+
+header a{
+	display: inline;
+    float: right;
+    text-decoration: none ;
+    padding: 2.5vh;
+    margin-top: -7vh;
+    transition-duration: 0.2s;
+    font-family: Arial;
+    color: black;
+}
+
+footer{
+	clear:both;
+	margin-top: 5vh;
+	width: 100vw;
+	height:20vh;
+	background-color:black;
+}
+
+footer p{
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.3em;
+	color: gray;
+	padding: 5vh 0 0 10vw;
+	
+}
+
+/*head part common navigator*/
+#navigator a:hover{
+	color: #1296db;
+    text-shadow:0.5px 0.5px 0.5px #1296db;
+    transition-duration: 0.1s;
+}
+
+#navigator a:focus{
+	color: #1296db;
+    transition-duration: 0.1s;
+}
+
+/*index.html*/
+/*index_main_background_central_img*/
+#background_img{
+	width: 100vw;
+	height: 80vh;
+	background-image: url("../img/background_img.jpg");
+}
+
+/*index_search_box*/
+#search_box_background{
+	position: absolute;
+    width: 50vw;
+    height: 30vh;
+    float: left;
+    margin: -40vh 0 0 25vw;
+    background-color: black;
+    opacity:0.6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:4px;
+}
+
+#search_box h4{
+	position: absolute;
+    float: left;
+    margin: -35vh 0 0 29vw;
+    font-family: Arial;
+    color: white;
+    font-size: 1.6em;
+}
+
+#search_box p{
+	position: absolute;
+    float: left;
+    margin: -30vh 0 0 29vw;
+    font-family: Arial;
+    font-size: 1.1em;
+    color: white;
+    opacity:0.7;
+}
+/*index_input_TEXT box*/
+#search_term{
+	position: absolute;
+	float: left;
+    margin: -23vh 0 0 29vw;
+    width: 35vw;
+    box-sizing: border-box;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+}
+
+/*index_input_BUTTON box*/
+#search_button {
+	position: absolute;
+	float: left;
+    margin: -23vh 0 0 65vw;
+    float: left;
+    width: 5vw;
+    height: 45px;
+    padding: 10px;
+    background: #1296db;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#search_button:hover{
+	background: #f9ce42;
+}
+
+/*index_link words*/
+#Link_words{
+    margin: 11vh auto;
+    font-family: 'Coustard';
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	color:gray;
+}
+
+.explain_words{
+	padding-bottom: 3vh;
+	font-family: 'Corben';
+	font-weight: 900;
+	color: black;
+}
+
+/*index.html_MAIN_FUNCTION_photo_change*/
+#categ_selector{
+	text-align: center;
+   cursor: pointer;
+
+}
+
+#categ_selector a{
+	font-family: Arial;
+    text-decoration: none ;
+    padding: 1.5vw;
+    transition-duration: 0.2s;
+    font-family: Arial;
+    color: #1296db;
+}
+
+#categ_selector a:hover{
+	color:black;
+	transition-duration: 0.1s;
+}
+
+#photo_row{
+	margin: 10vh 0 10vh 0;
+	width: 100vw;
+	height: 70vh;
+}
+
+.present_photos{
+	float:left;
+	display: inline-block;
+	height: 35vh;
+	width: 25vw;
+	padding-left: 0.5vw;
+	padding-top: 0.5vw;
+	margin: auto;
+}
+
+.present_photos:hover{
+	opacity: 0.5;
+}
+
+/*photo_detail.html*/
+/*photo_detail.html_insert_centre_img*/
+#centre_img{
+	background-color: black;
+	text-align:center;
+}
+
+#centre_img img{
+	height: 80vh;
+	padding-top: 8vh;
+	text-align: center;
+}
+
+#photographer_info{
+	margin-right: 2vw;
+	float:right;
+	font-family: 'Corben';
+	font-size: 1.3em;
+}
+/*photo_detail.html_content_location*/
+#introduction{
+	margin: 20vh 30vh;
+	padding: 2em;
+	width: 20em;
+	height: 6em;
+	background-color: #FFF;
+	font-size: 1.5em;
+	font-family: 'Corben';
+	color: #1296db;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+#introduction:hover{
+	box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+#introduction p{
+	padding-top: 1.4em;
+	color: black;
+	font-size: 0.8em;
+	font-family: "Arial";
+}
+/*photo_detail.html_content_photo_taken_detail*/
+#photo_taken_Info{
+	width: 100vw;
+	height: 60vh;
+	margin-bottom: 25vh;
+	line-height: 2em;
+}
+
+#photo_taken_Info_content{
+	position: relative;
+	padding-right: 2em;
+	text-align: right;
+	top: 43vh;
+	left: 15vw;
+	width: 20vw;
+	height: 10vh;
+	color: gray;
+}
+
+
+#photo_taken_Info_content h4{
+	font-family: "Corben";
+	font-weight: 900;
+}
+
+#photo_taken_Inf_map{
+	float: right;
+	margin-top: -10vh;
+	margin-right:15vw;
+	width: 50vw;
+	height: 60vh;
+	background-color: tomato;
+	background-color: #FFF;
+}
+
+#photo_taken_Inf_map:hover{
+	box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+}
+
+/*map.html*/
+#map{
+	float: right;
+	width: 60vw;
+	height: 60vh;
+	background-color: #fff;
+}
+
+#mapid{
+	padding-top: 8vh;
+	height: 100vh;
+}
+
+.leaflet-top,leaflet-left{
+	margin-top: 10vh;
+	margin-left: 5vh;
+}
+
+/*map.html_popup_img*/
+#popup_img{
+	position: fixed;
+	width: 30vw;
+	margin:20vh;
+	cursor: pointer;
+	z-index: 10000;
+}
+
+/*map.html_change_photo_button*/
+#button_refresh{
+	position: absolute;
+	right: 5vw;
+	float: right;
+	z-index: 10000;
+    margin: 10vh 10vw 0 0;
+    float: left;
+    width: 10vw;
+    height: 8vh;
+    background-color: #f9ce42;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#button_refresh:hover{
+	color:#1296db;
+}
+
+
+@media(max-width: 1100px){
+	#navigator{
+		margin-right: -35vh;
+	}
+	header a{
+	padding: 2vw;
+
+	}	
+	#background_img{
+		background-image: url("../img/background2.png")
+	}
+	.present_photos{
+		height: 50vh;
+		width: 33vw;
+	}
+}
+
+@media(max-width: 880px){
+	#navigator{
+		margin-left: -52vh;
+	}
+	header a{
+		padding: 2.5vw;
+	}	
+	.present_photos{
+		height: 50vh;
+		width: 50vw;
+	}
+}
+
+@media(max-width: 680px){
+	header{
+		height: 9vh;
+	}
+	#navigator{
+		display: none;
+	}
+	#search_box_background{
+		position: relative;
+		width: 100vw;
+		height: 13vh;
+		top: -73vh;
+		margin: 0;
+	}
+	#search_term{
+		position: relative;
+	    margin: -82vh 0 0 5vw;
+	    width: 80vw;
+	}
+	#search_button {
+		position: relative;
+	    margin: -82vh 0 0 85vw;
+	    width: 10vw;
+	    height: 45px;
+	    padding: 10px;
+
+	}
+
+	.present_photos{
+		height: 50vh;
+		width: 100vw;
+	}
+
+	#map{
+		float: right;
+		margin-top:-50vh; 
+		width: 100vw;
+		background-color: #fff;
+	}
+	#photo_taken_Info_content{
+		float: left;
+		padding:0;
+		text-align: left;
+		top: 30vh;
+		left: 15vw;
+		width: 40vw;
+		height: 10vh;
+		color: gray;
+	}
+
+	#introduction{
+		margin: 10vh 0 50vh 0;
+		padding: 6vh;
+		width: 100vw;
+		height: 6vh;
+		background-color: #FFF;
+		font-size: 1.5em;
+		font-family: 'Corben';
+		color: #1296db;
+		box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	}
+
+	#photo_location{
+		margin-top: -3vh;
+	}
+}
+
+
+
+
+

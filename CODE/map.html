@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Next Destination_map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+<!-- import css /JS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script3.js"></script>
+	<!-- leaflet css/js -->
+ 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+<!-- import font -->
+	<link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Corben' rel='stylesheet'>
+</head>
+
+
+<body id="body1">
+	<header>
+<!-- place LOGO -->
+		<div id="logo">
+			<img src="img/logo.jpg" alt="this is logo">
+
+<!-- place navigator to turn to different pages-->
+			<nav id="navigator">
+				<a href="#">Sign up</a>
+				<a href="#">|</a>		
+				<a href="#">Sign in</a>				
+				<a href="#"> HELP </a>				
+				<a href="#"> ABOUT </a>
+				<a href="map.html"> DISCOVER </a>				
+				<a href="index.html"> HOME </a>
+			</nav>
+		</div>
+	</header>
+
+<!-- main body of the map -->
+	<!-- search for next photo -->
+	<input type="button" id="button_refresh" value="next photo">
+	<!-- present photo -->
+	<div id="popup"><div id="popup_img"></div></div>
+	<!-- map shows here -->
+	<div id="mapid"></div>
+
+</body>
+</html>
+

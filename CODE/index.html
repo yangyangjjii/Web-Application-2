@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Next Destination</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+<!-- import css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+<!-- import font -->
+	<link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Corben' rel='stylesheet'>
+</head>
+
+<body>
+	<header>
+<!-- place LOGO -->
+		<div id="logo">
+			<img src="img/logo.jpg" alt="this is the logo of this site">
+<!-- place navigator to turn to different pages-->
+			<nav id="navigator">
+				<a href="#">Sign up</a>
+				<a href="#">|</a>		
+				<a href="#">Sign in</a>				
+				<a href="#"> HELP </a>				
+				<a href="#"> ABOUT </a>
+				<a href="map.html"> DISCOVER </a>				
+				<a href="index.html"> HOME </a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+<!-- set background img -->
+		<div id="background_img"></div>
+<!-- place search box to let user search other destinations-->
+		<div id="search_box">
+			<div id="search_box_background"></div>
+			<h4>Follow the photographs</h4>
+			<p>Travel and discover the unknown.</p>
+			<div id="input">
+				<form>
+					<label for="search_term">
+						<input type="text" id="search_term" placeholder="I want to go to..." onfocus="this.value=''">
+					</label>
+					<input type="button" id="search_button"  value="GO!">
+				</form>
+			</div>
+		</div>
+<!-- some link words to link -->
+		<div id="Link_words">
+			<pre class="explain_words">ENJOY    THE    SPLENDID    WORLD</pre>
+			<p>Follow the photos, follow your heart</p>
+		</div>
+<!-- set divide tags to show different photo groups -->
+		<div id="categ_selector">
+			<a id="nature">Nature</a>
+			<a id="people">People</a>
+			<a id="animal">Animal</a>
+		</div>
+<!-- present photo row -->
+		<a href = "photo_detail.html"><div id="photo_row"></div></a>
+	</main>
+
+<!-- page bottom -->
+	<footer>
+		<p>“Travel is fatal to prejudice, bigotry, and narrow-mindedness.” – Mark Twain</p>
+	</footer>
+</body>
+</html>
